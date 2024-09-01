@@ -5,7 +5,7 @@ from flaskext.mysql import MySQL
 # Create an object named app
 app = Flask(__name__)
 
-db_endpoint = open("/home/ec2-user/Terraform-Project/dbserver.endpoint", 'r', encoding='UTF-8') 
+db_endpoint = open("/home/ec2-user/Terraform-Project/tfrds.endpoint", 'r', encoding='UTF-8') 
 
 # Configure mysql database
 
