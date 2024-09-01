@@ -23,7 +23,7 @@ cursor = connection.cursor()
 
 
 def init_contact_list_db():
-    
+    db_name = open("/home/ec2-user/Terraform-Project/tfrds.name", 'r', encoding='UTF-8')
     db_name_value = db_name.readline().strip()
     contact_table = f"""
     CREATE TABLE IF NOT EXISTS {db_name_value}.contact_list(
