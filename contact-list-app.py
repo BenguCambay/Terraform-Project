@@ -12,7 +12,7 @@ db_name = open("/home/ec2-user/Terraform-Project/tfrds.name", 'r', encoding='UTF
 app.config['MYSQL_DATABASE_HOST'] = db_endpoint.readline().strip()
 app.config['MYSQL_DATABASE_USER'] = 'techpro'
 app.config['MYSQL_DATABASE_PASSWORD'] = 'techpro123'
-app.config['MYSQL_DATABASE_DB'] = db_name
+app.config['MYSQL_DATABASE_DB'] = db_name.readline().strip()
 app.config['MYSQL_DATABASE_PORT'] = 3306
 db_endpoint.close()
 mysql = MySQL()
