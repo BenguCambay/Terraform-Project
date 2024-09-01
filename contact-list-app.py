@@ -12,7 +12,7 @@ db_endpoint = open("/home/ec2-user/Terraform-Project/tfrds.endpoint", 'r', encod
 app.config['MYSQL_DATABASE_HOST'] = db_endpoint.readline().strip()
 app.config['MYSQL_DATABASE_USER'] = 'techpro'
 app.config['MYSQL_DATABASE_PASSWORD'] = 'techpro123'
-app.config['MYSQL_DATABASE_DB'] = 'tfrds'
+app.config['MYSQL_DATABASE_DB'] = 'tfrds-${var.environment}'
 app.config['MYSQL_DATABASE_PORT'] = 3306
 db_endpoint.close()
 mysql = MySQL()
