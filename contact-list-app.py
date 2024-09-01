@@ -24,8 +24,9 @@ cursor = connection.cursor()
 
 def init_contact_list_db():
     
-    contact_table = """
-    CREATE TABLE IF NOT EXISTS db_name.readline().strip().contact_list(
+    db_name_value = db_name.readline().strip()
+    contact_table = f"""
+    CREATE TABLE IF NOT EXISTS {db_name_value}.contact_list(
     id INT NOT NULL AUTO_INCREMENT,
     name VARCHAR(100) NOT NULL,
     number VARCHAR(100) NOT NULL,
