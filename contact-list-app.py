@@ -21,9 +21,9 @@ connection = mysql.connect()
 connection.autocommit(True)
 cursor = connection.cursor()
 
-
+database_name = db_name.readline().strip()
 def init_contact_list_db():
-    database_name = db_name.readline().strip()
+    
     contact_table = """
     CREATE TABLE IF NOT EXISTS {database_name}.contact_list(
     id INT NOT NULL AUTO_INCREMENT,
