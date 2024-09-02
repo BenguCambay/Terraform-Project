@@ -10,7 +10,7 @@ variable "ec2-type" {
 }
 
 variable "key" {
-    default = "firstkey"
+    default = "mynewPair"
     description = "keyname"
 }
 
@@ -20,12 +20,12 @@ variable "token" {
 }
 
 variable "certifikaArn" {
-    default = "arn:aws:acm:us-east-1:058264318400:certificate/02c1dfe6-5911-4006-a3ea-a58fadddd5b3"
+    default = "arn:aws:acm:us-east-1:992382643040:certificate/ec21b6b8-d84b-4bee-b21b-53bf5cb3d495"
     description = "certifikaArn"
 }
 
 variable "domain_name" {
-    default = "benfarmet.com"
+    default = "datacheck.space"
     description = "domain name"
 }
 
